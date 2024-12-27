@@ -1,0 +1,23 @@
+<!--شروع محصولات ویژه-->
+<section class="vip right">
+<div class="title right"><i class="fa fa-diamond right"></i><h4 class="left rt-15">محصولات ویژه</h4><span class="left rt-13">پست های ویژه</span></div>
+<div class="content left">
+<div class="owl-carousel vips rt">
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="0" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini2.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini3.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini4.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini5.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini6.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini7.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini8.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini9.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini10.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini11.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini12.png" width="80px" height="80px"></a></div>
+<div class="item rt"><a target="_blank" href="product.html" class="screenshot-preview" data-preview="images/test.jpg" data-titr="تیتر در این مکان" data-titrsmall="قالب PSD / لایه باز شرکتی" data-price="۶۰,۰۰۰" title="عنوان در این جا"><img src="<?php echo MR_TDU ?>/images//mini13.png" width="80px" height="80px"></a></div>
+
+</div>
+</div>
+</section>
+<!--پایان محصولات ویژه-->

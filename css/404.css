@@ -1,0 +1,21 @@
+@charset "utf-8";
+#particles-js{
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	opacity:0.5;
+}
+.bg-text{
+	position:relative;
+	overflow:hidden;
+}
+.bg-text .main{
+	position:relative;
+	z-index:100000;
+}
+.bg-text:hover{
+	opacity:1;
+}

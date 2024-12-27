@@ -1,0 +1,878 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>پنل کاربری</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/about.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/panel.css">
+<link rel="stylesheet" href="css/tooltip.css">
+<link rel="stylesheet" href="css/fonts.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+<!--شروع هدر-->
+<header>
+
+<!--شروع ناوبار-->
+<nav class="rt">
+<div class="main">
+<span class="show-menu right rt-14" id="hiden-menu" onclick="document.getElementById('menu-side').style.display='block';document.getElementById('show-menu').style.display='block';document.getElementById('hiden-menu').style.display='none';"><i class="fa fa-align-center right"></i> منوی سایت</span>
+<span class="show-menu right rt-14" id="show-menu" onclick="document.getElementById('menu-side').style.display='none';document.getElementById('show-menu').style.display='none';document.getElementById('hiden-menu').style.display='block';"><i class="fa fa-close right"></i> منوی سایت</span>
+<ul class="right rt-13" id="menu-side">
+<li class="right"><a href="index.html" class="start">شروع کنید</a>
+<ul class="right rt-13">
+<li class="rt"><a href="how-to-buy.html"><i class="fa fa-circle"></i> خریدار هستید؟</a></li>
+<li class="rt"><a href="how-to-sell.html"><i class="fa fa-circle"></i> فروشنده هستید؟</a></li>
+<li class="rt"><a href="affiliate.html"><i class="fa fa-circle"></i> بازاریاب هستید؟</a></li>
+</ul></li>
+<li class="right"><a href="about.html">درباره ما</a></li>
+<li class="right suber"><a href="" class="subewr"> قوانین مارکت<i class="fa fa-angle-down"></i></a>
+<ul class="right rt-13">
+<li class="rt"><a href="user-guide.html"><i class="fa fa-circle"></i> قوانین خرید محصول</a></li>
+<li class="rt"><a href="user-guide.html"><i class="fa fa-circle"></i> قوانین بازاریابی</a></li>
+<li class="rt"><a href="license.html"><i class="fa fa-circle"></i> مجوزهای انتشار</a></li>
+</ul>
+</li>
+
+<li class="right"><a href="faq.html">سوالات متداول</a></li>
+<li class="right"><a href="blog.html">وبلاگ</a></li>
+<li class="right"><a href="logo.html">لوگو</a></li>
+<li class="right"><a href="affiliate.html">بازاریابی</a></li>
+<li class="right"><a href="contact.html">تماس با ما</a></li>
+
+<li class="right suber"><a href="index.html" class="subewr">صفحات <i class="fa fa-angle-down"></i></a>
+<ul class="right rt-13">
+<li class="rt"><a href="payment.html"><i class="fa fa-circle"></i> پرداخت آنلاین</a></li>
+<li class="rt"><a href="changelog.html"><i class="fa fa-circle"></i> پیشرفت ها</a></li>
+<li class="rt"><a href="basket-1.html"><i class="fa fa-circle"></i> سبد خرید</a></li>
+<li class="rt"><a href="page.html"><i class="fa fa-circle"></i> برگه خالی</a></li>
+<li class="rt"><a href="my-account.html"><i class="fa fa-circle"></i> حساب کاربری</a></li>
+<li class="rt"><a href="404.html"><i class="fa fa-circle"></i> صفحه 404</a></li>
+<li class="rt"><a href="tab.html"><i class="fa fa-circle"></i> صفحه تب دار</a></li>
+<li class="rt"><a href="my-account.html"><i class="fa fa-circle"></i> حساب کاربری</a></li>
+<li class="rt"><a href="commnet.html"><i class="fa fa-circle"></i> صفحه دیدگاه ها</a></li>
+</ul>
+
+<li class="right suber"><a href="index.html" class="subewr">زیرمنو <i class="fa fa-angle-down"></i></a>
+<ul class="right rt-13">
+<li class="rt"><a href="index.html"><i class="fa fa-circle"></i> عنوان زیر منو یک</a></li>
+<li class="rt"><a href="index.html"><i class="fa fa-circle"></i> عنوان زیر منو دو</a></li>
+<li class="rt"><a href="index.html"><i class="fa fa-circle"></i> عنوان زیر منو سه</a></li>
+<li class="rt"><a href="index.html"><i class="fa fa-circle"></i> عنوان زیر منو چهار</a></li>
+<li class="rt"><a href="index.html"><i class="fa fa-circle"></i> عنوان زیر منو پنج</a></li>
+</ul>
+
+<li class="right"><a href="panel.html">پنل کاربری</a></li>
+
+</ul>
+
+<div class="panel-link h-c-panel left rt-13">
+<div class="h-panel right">
+<div class="right brief"><i class="fa fa-user"></i> <span>حمید جلیلیان</span>  <i class="fa fa-money"></i> <b>1400</b> تومان</div>
+<div class="h-panel-links rt rt-12">
+<a href="dashborad.html" class="right">پیشخوان <i class="fa fa-desktop left"></i></a>
+<a href="dashborad-edit-profile.html" class="right">پروفایل کاربری <i class="fa fa-id-card-o left"></i></a>
+<a href="dashborad-downloads.html" class="right">دانلود ها <i class="fa fa-download left"></i></a>
+<a href="affiliate.html" class="right">بازاریابی <i class="fa fa-users left"></i></a>
+<a href="#" class="right">علاقه مندی ها <i class="fa fa-heart left"></i></a>
+<a href="dashborad-edit-profile.html" class="right">تنظیمات کاربری <i class="fa fa-cogs left"></i></a>
+<a href="dashborad.html" class="right">شرح عملکرد <i class="fa fa-file-text-o left"></i></a>
+<a href="dashborad.html" class="right">تسویه حساب <i class="fa fa-money left"></i></a>
+<a href="dashborad.html" class="right">ارسال محصول <i class="fa fa-send-o left"></i></a>
+<a href="dashborad-tickets-new.html" class="right">درخواست پشتیبانی <i class="fa fa-support left"></i></a>
+</div>
+</div>
+<a href="index.html" class="right sing-out"><i class="fa fa-power-off"></i> خروج </a>
+</div>
+
+<div class="panel-link left rt-13" style="display:none">
+<a href="" class="mon left"><i class="fa fa-money"></i> کسب درآمد</a>
+<a href="" class="log left"><i class="fa fa-sign-in"></i> ورود مشتریان</a>
+<a href="" class="reg left"><i class="fa fa-user-plus"></i> ثبت نام</a>
+</div>
+</div>
+</nav>
+<!--پایان ناوبار-->
+
+<div class="main">
+
+<!--شروع لوگو سایت-->
+<a href="index.html"><img src="images/logo.jpg" class="right logo"></a>
+<!--پایان لوگو سایت-->
+
+<!--شروع ایکون های دسترسی سریع-->
+<div class="h-icons left">
+<a href="category.html" class="left"><div class="icon rt-center"><i class="fa fa-wordpress"></i></div><span class="rt-12">وردپرس</span></a>
+<a href="category.html" class="left"><div class="icon rt-center"><i class="fa fa-joomla"></i></div><span class="rt-12">جوملا</span></a>
+<a href="category.html" class="left"><div class="icon rt-center"><i class="fa fa-html5"></i></div><span class="rt-12">HTML</span></a>
+<a href="category.html" class="left"><div class="icon rt-center"><i class="fa fa-github"></i></div><span class="rt-12">اسکریپت</span></a>
+<a href="category.html" class="left"><div class="icon rt-center"><i class="fa fa-desktop"></i></div><span class="rt-12">PSD</span></a>
+</div>
+<!--پایان ایکون های دسترسی سریع-->
+
+<!--شروع دسته بندی-->
+<div class="right category">
+<span class="show-cat right rt-14" id="hiden-cat" onclick="document.getElementById('category-side').style.display='block';document.getElementById('show-cat').style.display='block';document.getElementById('hiden-cat').style.display='none';"><i class="fa fa-list-ul right"></i> مشاهده دسته بندی</span>
+<span class="show-cat right rt-14" id="show-cat" onclick="document.getElementById('category-side').style.display='none';document.getElementById('show-cat').style.display='none';document.getElementById('hiden-cat').style.display='block';"><i class="fa fa-close right"></i> بستن دسته بندی</span>
+<ul class="right rt-category" id="category-side">
+
+<li class="link right"><a href="#" class="right rt-13 name">ویترین <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-double-left"></i> زیر مجموعه دسته بندی</a><span class="left rt-13 open">باز کردن</span>
+<ul>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+
+<li class="link-big right"><a href="#" class="right rt-13 name">پوسته وردپرس <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="big rt rt-13">
+
+<div class="widgets right">
+<a href="category.html" class="right"><i class="fa fa-signal right"></i><h3 class="right rt-18">پرفروشترین های فصل</h3><span class="rt rt-13">پرفروشترین محصولات سه ماه اخیر</span></a>
+<a href="category.html" class="right"><i class="fa fa-hand-peace-o right"></i><h3 class="right rt-18">محصولات حرفه‌ای</h3><span class="rt rt-13">محصولات با امکانات و طراحی بی‌نظیر</span></a>
+<a href="category.html" class="right"><i class="fa fa-diamond right"></i><h3 class="right rt-18">ویژه سال</h3><span class="rt rt-13">محصولات ویژه یک سال اخیر</span></a>
+<a href="category.html" class="right"><i class="fa fa-heart right"></i><h3 class="right rt-18">محبوب ترین محصولات</h3><span class="rt rt-13">پرفروشترین‌های 2 سال اخیر</span></a>
+</div>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="right"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+
+<li class="link right"><a href="category.html" class="right rt-13 name">قالب جوملا <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+<li class="link right"><a href="category.html" class="right rt-13 name">قالب فروشگاهی <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+<li class="link right"><a href="category.html" class="right rt-13 name">قالب HTML <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+<li class="link right"><a href="category.html" class="right rt-13 name">قالب PSD <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+<li class="link right"><a href="#" class="right rt-13 name">قالب whmcs <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+<li class="link right"><a href="#" class="right rt-13 name">افزونه و ماژول <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+<li class="link right"><a href="#" class="right rt-13 name">اسکریپت <i class="fa fa-caret-down"></i></a><span class="left rt-13 open">باز کردن</span>
+<ul class="small right rt-13">
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+<li class="rt"><a href="category.html"><i class="fa fa-angle-left"></i> زیر مجموعه دسته بندی</a></li>
+</ul>
+</li>
+
+</ul>
+
+<!--شروع قیمت-->
+<span class="left shoping"><i class="fa fa-shopping-cart"></i> <div>۰</div> تومان</span>
+<!--پایان قیمت-->
+
+</div>
+<!--پایان دسته بندی-->
+
+</div>
+</header>
+<!--پایان هدر-->
+
+<!--شروع باکس عناوین زیر هدر-->
+<aside class="bg-text rt">
+<div class="main">
+<div class="page-text rt">
+
+<div class="title-side right">
+<h1 class="rt">پنل کاربری</h1>
+<div class="location right rt-13">
+<a href="index.html"><b>وب استور</b></a>»<a href="">پنل کاربری</a>
+</div>
+</div>
+
+<form action="/">
+<div class="search-b left">
+<input class="right rt-14" name="s" placeholder="نام قالب، موضوع یا عبارت دلخواه" autocomplete="off" data-baseurl="" type="text">
+<button class="left rt-15"></button>
+</div>
+</form>
+
+</div>
+</div>
+</aside>
+<!--پایان باکس عناوین زیر هدر-->
+
+<!--شروع محتوای اصلی سایت-->
+<div class="bg-web rt">
+<div class="main">
+<div class="cpanel rt">
+<span class="tab-btn tb-1 right rt-14">پروفایل</span>
+<span class="tab-btn tb-2 right rt-14">نمونه کار ها</span>
+<div class="cpanel-content right">
+
+<!--شروع فرم پروفایل-->
+<section class="tab-con tbc-1 right">
+<img src="images/profile.jpg" class="rt bg">
+
+<!--شروع اعلانات-->
+<aside class="block right notif">
+<div class="title-wr-b rt"><i class="fa fa-bullhorn right rt-18"></i><h4 class="right rt-15">جدیدترین اعلان ها</h4><a href="#" class="left rt-13">مشاهده همه</a></div>
+<ul class="right">
+<li class="rt"><div class="date right rt-center rt-11"><span class="right">06 شهریور 1397</span></div><div class="entery left rt-center"><a href="#" class="right rt-16">اعلان شماره 1</a><p class="rt rt-13">خریداران متعهد هستند در استفاده از محصولات این سایت تابع قوانین جمهوری اسلامی ایران باشند</p></div></li>
+<li class="rt"><div class="date right rt-center rt-11"><span class="right">06 شهریور 1397</span></div><div class="entery left rt-center"><a href="#" class="right rt-16">اعلان شماره 2</a><p class="rt rt-13"> استفاده از محصولات وب سایت وب استور تنها در یک دامنه به ازای هر خرید امکان پذیر است و استفاده در بیش از یک دامنه نیازمند اجازه رسمی از تیم طراح و مدیریت وب سایت وب استور است</p></div></li>
+<li class="rt"><div class="date right rt-center rt-11"><span class="right">06 شهریور 1397</span></div><div class="entery left rt-center"><a href="#" class="right rt-16">اعلان شماره 3</a><p class="rt rt-13">تغییر درمحصولات و فروش انها به هر نحو غیر مجاز میباشد و برابر قوانین جرایم رایانه ای با سوء استفاده کنندگان برخورد می شودتغییر درمحصولات و فروش انها به هر نحو غیر مجاز میباشد و برابر قوانین جرایم رایانه ای با سوء استفاده کنندگان برخورد می شود</p></div></li>
+<li class="rt"><div class="date right rt-center rt-11"><span class="right">06 شهریور 1397</span></div><div class="entery left rt-center"><a href="#" class="right rt-16">اعلان شماره 4</a><p class="rt rt-13">استفاده از تصاویر محصولات (کاور ، آیکون یا تصاویر به کار رفته در توضیحات) ، متن توضیحات ، عناوین ، پیش نمایش محصولات غیر از وب سایت وب استور به آدرس www.webresan.com غیر مجاز می باشد و برابر قوانین جرایم رایانه ای با سوء استفاده کنندگان برخورد می شود</p></div></li>
+</ul>
+</aside>
+<!--پایان اعلانات-->
+
+<!--شروع استودیو وب استور-->
+<aside class="block right studio">
+<div class="title-wr-b rt"><i class="fa fa-inbox right rt-18"></i><h4 class="right rt-15">استودیو وب استور</h4></div>
+<div class="entery right">
+<a href="#" class="s-item right"><img src="images/panel-wordpress.png"><span class="rt rt-14">وردپرس</span></a>
+<a href="#" class="s-item right"><img src="images/panel-joomla.png"><span class="rt rt-14">جوملا</span></a>
+<a href="#" class="s-item right"><img src="images/panel-opencart.png"><span class="rt rt-14">اپن کارت</span></a>
+<a href="#" class="s-item right"><img src="images/panel-peresta.png"><span class="rt rt-14">پرستاشاپ</span></a>
+<a href="#" class="s-item right"><img src="images/panel-html.png"><span class="rt rt-14">HTML</span></a>
+<a href="#" class="s-item right"><img src="images/panel-host.png"><span class="rt rt-14">WHMCS</span></a>
+<a href="#" class="s-item right"><img src="images/panel-script.png"><span class="rt rt-14">نصب اسکریپت</span></a>
+<a href="#" class="s-item right"><img src="images/panel-custom.png"><span class="rt rt-14">شحصی سازی</span></a>
+</div>
+</aside>
+<!--پایان استودیو وب استور-->
+
+<!--شروع تب بندی داخل پنل-->
+<aside class="block right panel-tabs">
+<div class="btns right rt-14">
+<span class="panel-tb-1 right">نصب اسکریپت</span>
+<span class="panel-tb-2 right">نصب وردپرس</span>
+<span class="panel-tb-3 right">نصب انجمن ساز</span>
+<span class="panel-tb-4 right">نصب پرستاشاپ</span>
+<span class="panel-tb-5 right">نصب ووکامرس</span>
+<span class="panel-tb-6 right">نصب جوملا</span>
+<span class="panel-tb-7 right">طراحی سایت</span>
+</div>
+<div class="entery left">
+
+<!--شروع تب شماره 1 داخل پنل-->
+<div class="rt panel-tbc-1">
+<div class="tbc-wr rt">
+<p class="rt rt-14"><b>تب شماره 1</b></p>
+<p class="rt rt-13">اغلب سیستم‌های مدیریت محتوا (CMS) قابلیت ایجاد محتوای داینامیک را دارند. بدین معنی که محتوای تشکیل دهنده یک صفحه را در دیتابیس ذخیره می‌کند و این محتوا هنگام درخواست صفحه از سوی کلاینت، از دیتابیس خوانده شده و نمایش در خواهد آمد.</p>
+<ul class="rt rt-13">
+<li>شرط اول</li>
+<li>شرط دوم</li>
+<li>شرط سوم</li>
+</ul>
+<p class="note-color right rt-13 help">اگر اسکریپت درخواستی شما در لیست ما قرار ندارد، کافیست یک درخواست برای واحد طراحی ارسال نموده تا از هزینه نصب آن مطلع شوید.</p>
+<p class="note-color right rt-13 warning"><strong>نصب اسکریپت</strong> های <strong>جوملا</strong>، <strong>وردپرس</strong> و <strong>نیوک فارسی</strong>، یکبار به صورت رایگان برای هر سرویس هاست انجام می‌شود. برای استفاده از‌این امکان،&nbsp;نیازی به ارسال سفارش نیست. کافیست پس از فعال شدن هاست و دامنه، یک درخواست برای <a href="#">واحد طراحی</a> مبنی بر نصب سیستم مدیریت محتوا ارسال کنید.</p>
+<p class="note-color right rt-13 hint"><strong>سیستم مدیریت محتوا</strong> یا <strong>CMS</strong> در واقع مخفف واژه Content Management System می‌باشند. سیستم های مدیریت محتوا نرم افزاری روی هاست می‌باشند که‌ به‌مدیر سایت اجازه می‌دهند تا محتواي سايت را بدون نياز به‌طراحي دوباره سايت، تغيير دهد.</p>
+</div>
+
+<div class="rt form-order">
+فرم سفارش را اینجا وارد کنید شماره 1
+</div>
+
+<div class="rt form-peygiry">
+فرم پیگیری را اینجا وارد کنید شماره 1
+</div>
+
+<span class="left rt-14 order-peygiry order-btn">ثبت سفارش جدید</span>
+<span class="left rt-14 order-peygiry peygiry-btn">پیگیری سفارش</span>
+</div>
+<!--پیگیری تب شماره 1 داخل پنل-->
+
+<!--شروع تب شماره 2 داخل پنل-->
+<div class="rt panel-tbc-2">
+<div class="tbc-wr rt">
+<p class="rt rt-14"><b>تب شماره 2</b></p>
+<ul class="rt rt-13">
+<li>شرط اول</li>
+<li>شرط دوم</li>
+<li>شرط سوم</li>
+</ul>
+<p class="note-color right rt-13 hint"><strong>سیستم مدیریت محتوا</strong> یا <strong>CMS</strong> در واقع مخفف واژه Content Management System می‌باشند. سیستم های مدیریت محتوا نرم افزاری روی هاست می‌باشند که‌ به‌مدیر سایت اجازه می‌دهند تا محتواي سايت را بدون نياز به‌طراحي دوباره سايت، تغيير دهد.</p>
+</div>
+
+<div class="rt form-order">
+فرم سفارش را اینجا وارد کنید شماره 2
+</div>
+
+<div class="rt form-peygiry">
+فرم پیگیری را اینجا وارد کنید شماره 2
+</div>
+
+<span class="left rt-14 order-peygiry order-btn">ثبت سفارش جدید</span>
+<span class="left rt-14 order-peygiry peygiry-btn">پیگیری سفارش</span>
+</div>
+<!--پیگیری تب شماره 2 داخل پنل-->
+
+<!--شروع تب شماره 3 داخل پنل-->
+<div class="rt panel-tbc-3">
+<div class="tbc-wr rt">
+<p class="rt rt-14"><b>تب شماره 3</b></p>
+<ul class="rt rt-13">
+<li>شرط اول</li>
+<li>شرط دوم</li>
+<li>شرط سوم</li>
+</ul>
+<p class="note-color right rt-13 warning"><strong>نصب اسکریپت</strong> های <strong>جوملا</strong>، <strong>وردپرس</strong> و <strong>نیوک فارسی</strong>، یکبار به صورت رایگان برای هر سرویس هاست انجام می‌شود. برای استفاده از‌این امکان،&nbsp;نیازی به ارسال سفارش نیست. کافیست پس از فعال شدن هاست و دامنه، یک درخواست برای <a href="#">واحد طراحی</a> مبنی بر نصب سیستم مدیریت محتوا ارسال کنید.</p>
+</div>
+
+<div class="rt form-order">
+فرم سفارش را اینجا وارد کنید شماره 3
+</div>
+
+<div class="rt form-peygiry">
+فرم پیگیری را اینجا وارد کنید شماره 3
+</div>
+
+<span class="left rt-14 order-peygiry order-btn">ثبت سفارش جدید</span>
+<span class="left rt-14 order-peygiry peygiry-btn">پیگیری سفارش</span>
+</div>
+<!--پیگیری تب شماره 3 داخل پنل-->
+
+<!--شروع تب شماره 4 داخل پنل-->
+<div class="rt panel-tbc-4">
+<div class="tbc-wr rt">
+<p class="rt rt-14"><b>تب شماره 4</b></p>
+<ul class="rt rt-13">
+<li>شرط اول</li>
+<li>شرط دوم</li>
+<li>شرط سوم</li>
+</ul>
+<p class="note-color right rt-13 help">اگر اسکریپت درخواستی شما در لیست ما قرار ندارد، کافیست یک درخواست برای واحد طراحی ارسال نموده تا از هزینه نصب آن مطلع شوید.</p>
+</div>
+
+<div class="rt form-order">
+فرم سفارش را اینجا وارد کنید شماره 4
+</div>
+
+<div class="rt form-peygiry">
+فرم پیگیری را اینجا وارد کنید شماره 4
+</div>
+
+<span class="left rt-14 order-peygiry order-btn">ثبت سفارش جدید</span>
+<span class="left rt-14 order-peygiry peygiry-btn">پیگیری سفارش</span>
+</div>
+<!--پیگیری تب شماره 4 داخل پنل-->
+
+<!--شروع تب شماره 5 داخل پنل-->
+<div class="rt panel-tbc-5">
+<div class="tbc-wr rt">
+<p class="rt rt-14"><b>تب شماره 5</b></p>
+<ul class="rt rt-13">
+<li>شرط اول</li>
+<li>شرط دوم</li>
+<li>شرط سوم</li>
+</ul>
+<p class="note-color right rt-13 help">اگر اسکریپت درخواستی شما در لیست ما قرار ندارد، کافیست یک درخواست برای واحد طراحی ارسال نموده تا از هزینه نصب آن مطلع شوید.</p>
+<p class="note-color right rt-13 warning"><strong>نصب اسکریپت</strong> های <strong>جوملا</strong>، <strong>وردپرس</strong> و <strong>نیوک فارسی</strong>، یکبار به صورت رایگان برای هر سرویس هاست انجام می‌شود. برای استفاده از‌این امکان،&nbsp;نیازی به ارسال سفارش نیست. کافیست پس از فعال شدن هاست و دامنه، یک درخواست برای <a href="#">واحد طراحی</a> مبنی بر نصب سیستم مدیریت محتوا ارسال کنید.</p>
+</div>
+
+<div class="rt form-order">
+فرم سفارش را اینجا وارد کنید شماره 5
+</div>
+
+<div class="rt form-peygiry">
+فرم پیگیری را اینجا وارد کنید شماره 5
+</div>
+
+<span class="left rt-14 order-peygiry order-btn">ثبت سفارش جدید</span>
+<span class="left rt-14 order-peygiry peygiry-btn">پیگیری سفارش</span>
+</div>
+<!--پیگیری تب شماره 5 داخل پنل-->
+
+<!--شروع تب شماره 6 داخل پنل-->
+<div class="rt panel-tbc-6">
+<div class="tbc-wr rt">
+<p class="rt rt-14"><b>تب شماره 6</b></p>
+<ul class="rt rt-13">
+<li>شرط اول</li>
+<li>شرط دوم</li>
+<li>شرط سوم</li>
+</ul>
+<p class="note-color right rt-13 warning"><strong>نصب اسکریپت</strong> های <strong>جوملا</strong>، <strong>وردپرس</strong> و <strong>نیوک فارسی</strong>، یکبار به صورت رایگان برای هر سرویس هاست انجام می‌شود. برای استفاده از‌این امکان،&nbsp;نیازی به ارسال سفارش نیست. کافیست پس از فعال شدن هاست و دامنه، یک درخواست برای <a href="#">واحد طراحی</a> مبنی بر نصب سیستم مدیریت محتوا ارسال کنید.</p>
+<p class="note-color right rt-13 hint"><strong>سیستم مدیریت محتوا</strong> یا <strong>CMS</strong> در واقع مخفف واژه Content Management System می‌باشند. سیستم های مدیریت محتوا نرم افزاری روی هاست می‌باشند که‌ به‌مدیر سایت اجازه می‌دهند تا محتواي سايت را بدون نياز به‌طراحي دوباره سايت، تغيير دهد.</p>
+</div>
+
+<div class="rt form-order">
+فرم سفارش را اینجا وارد کنید شماره 6
+</div>
+
+<div class="rt form-peygiry">
+فرم پیگیری را اینجا وارد کنید شماره 6
+</div>
+
+<span class="left rt-14 order-peygiry order-btn">ثبت سفارش جدید</span>
+<span class="left rt-14 order-peygiry peygiry-btn">پیگیری سفارش</span>
+</div>
+<!--پیگیری تب شماره 6 داخل پنل-->
+
+<!--شروع تب شماره 7 داخل پنل-->
+<div class="rt panel-tbc-7">
+<div class="tbc-wr rt">
+<p class="rt rt-14"><b>تب شماره 7</b></p>
+<ul class="rt rt-13">
+<li>شرط اول</li>
+<li>شرط دوم</li>
+<li>شرط سوم</li>
+</ul>
+<p class="note-color right rt-13 help">اگر اسکریپت درخواستی شما در لیست ما قرار ندارد، کافیست یک درخواست برای واحد طراحی ارسال نموده تا از هزینه نصب آن مطلع شوید.</p>
+<p class="note-color right rt-13 hint"><strong>سیستم مدیریت محتوا</strong> یا <strong>CMS</strong> در واقع مخفف واژه Content Management System می‌باشند. سیستم های مدیریت محتوا نرم افزاری روی هاست می‌باشند که‌ به‌مدیر سایت اجازه می‌دهند تا محتواي سايت را بدون نياز به‌طراحي دوباره سايت، تغيير دهد.</p>
+</div>
+
+<div class="rt form-order">
+فرم سفارش را اینجا وارد کنید شماره 7
+</div>
+
+<div class="rt form-peygiry">
+فرم پیگیری را اینجا وارد کنید شماره 7
+</div>
+
+<span class="left rt-14 order-peygiry order-btn">ثبت سفارش جدید</span>
+<span class="left rt-14 order-peygiry peygiry-btn">پیگیری سفارش</span>
+</div>
+<!--پیگیری تب شماره 7 داخل پنل-->
+
+</div>
+</aside>
+<!--پایان تب بندی داخل پنل-->
+
+<!--شروع پیگیری استدیو وب استور-->
+<aside class="block right form-peygiry-panel">
+<div class="title-wr-b rt"><i class="fa fa-search right rt-18"></i><h4 class="right rt-15">پیگیری سفارش استدیو</h4></div>
+<div class="entery-peygiry rt">
+<p class="rt rt-13" align="center">برای رهگیری سفارشتان شماره سفارش و ایمیلی که درهنگام ثبت سفارش وارد کردید را در این قسمت وارد و کلید رهگیری را فشار دهید.</p>
+<form class="right">
+<input type="text" class="right rt-14" placeholder="شماره سریال سفارش">
+<input type="submit" class="left rt-14" value="پیگیری سفارش">
+</form>
+</div>
+</aside>
+<!--پایان پیگیری استدیو وب استور-->
+
+<!--شروع تنضیمات پروفایل-->
+<aside class="box wr-form woocommerce block right">
+<form class="woocommerce-EditAccountForm edit-account" action="" method="post">
+<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
+<label for="account_first_name">نام&nbsp;<span class="required">*</span></label>
+<input class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="" type="text">
+</p>
+<p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
+<label for="account_last_name">نام خانوادگی&nbsp;<span class="required">*</span></label>
+<input class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" autocomplete="family-name" value="" type="text">
+</p>
+<div class="clear"></div>
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="account_display_name">نمایش نام&nbsp;<span class="required">*</span></label>
+<input class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="Hamidrezajalilian" type="text"> <span class="rt-11"><em>به این صورت اسم شما در حساب کاربری و نظرات دیده خواهد شد</em></span>
+</p>
+<div class="clear"></div>
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="account_email">آدرس ایمیل&nbsp;<span class="required">*</span></label>
+<input class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="asdadsa@sadasd.ir" type="email">
+</p>
+<legend>تغییر گذرواژه</legend>
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="password_current" class="passf">گذرواژه پیشین (در صورتی که قصد تغییر ندارید خالی بگذارید)</label>
+<input class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" autocomplete="off" type="password">
+</p>
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="password_1" class="passf">گذرواژه جدید (در صورتی که قصد تغییر ندارید خالی بگذارید)</label>
+<input class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" autocomplete="off" type="password">
+</p>
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="password_2">تکرار رمز تازه</label>
+<input class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" autocomplete="off" type="password">
+</p>
+<div class="clear"></div>
+<p class="wast-form-group woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="wast-mobile">شماره همراه
+<small class="wast-text-muted">(جهت دریافت اعلانات تیکت شماره همراه خود را وارد نمایید.)</small>
+</label>
+<input class="wast-form-control woocommerce-Input woocommerce-Input--password input-text" id="wast-mobile" name="wast-mobile" value="" type="text">
+</p>
+<p>
+<input id="save-account-details-nonce" name="save-account-details-nonce" value="e114a50c13" type="hidden"><input name="_wp_http_referer" value="/new/my-account/edit-user/" type="hidden">		<button type="submit" class="woocommerce-Button button" name="save_account_details" value="ذخیره تغییرات">ذخیره تغییرات</button>
+<input name="action" value="save_account_details" type="hidden">
+</p>
+</form>
+</aside>
+<!--پایان تنضیمات پروفایل-->
+
+</section>
+<!--پایان فرم پروفایل-->
+
+<!--شروع نمونه کار-->
+<section class="tab-con tbc-2 right">
+
+<!--شروع پست های نمونه کار-->
+<div class="nemoone-kar rt">
+
+<!--شروع نمونه کار کاربر-->
+<article class="post right">
+<div class="fix-items right rt-13">
+<div class="simptip-position-right simptip-movable half-arrow rt-center right orginal" data-tooltip="اورجینال"><i class="fa fa-check"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right easy-setup" data-tooltip="بسته نصب آسان"><i class="fa fa-support"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right profassional" data-tooltip="محصول حرفه ای"><i class="fa fa-star"></i></div>
+</div>
+<div class="big-photo rt"><a target="_blank" href="#"><img src="images/test.png" class="rt"></a></div>
+<div class="left-side rt">
+<div class="mini-items rt-13">
+<a href="#" class="simptip-position-top simptip-danger simptip-movable" data-tooltip="پیشنمایش محصول"><i class="fa fa-eye"></i></a>
+<a href="#" class="simptip-position-top simptip-movable" data-tooltip="جزئیات محصول"><i class="fa fa-file-text-o"></i></a>
+<a href="#" class="simptip-position-top simptip-success simptip-movable" data-tooltip="خرید محصول"><i class="fa fa-shopping-cart"></i></a>
+</div>
+<div class="content rt">
+<h2 class="title rt rt-13"><a href="#">قالب های اس ام اس بصورت HTML</a></h2>
+</div>
+<div class="price left">۲۹۰۰۰ <span class="rt-18">تومان</span></div>
+<span class="pay-salle-mini rt rt-12">۹ فروش</span>
+</div>
+</article>
+<!--پایان نمونه کار کاربر-->
+
+<!--شروع نمونه کار کاربر-->
+<article class="post right">
+<div class="fix-items right rt-13">
+<div class="simptip-position-right simptip-movable half-arrow rt-center right orginal" data-tooltip="اورجینال"><i class="fa fa-check"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right easy-setup" data-tooltip="بسته نصب آسان"><i class="fa fa-support"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right profassional" data-tooltip="محصول حرفه ای"><i class="fa fa-star"></i></div>
+</div>
+<div class="big-photo rt"><a target="_blank" href="#"><img src="images/test.png" class="rt"></a></div>
+<div class="left-side rt">
+<div class="mini-items rt-13">
+<a href="#" class="simptip-position-top simptip-danger simptip-movable" data-tooltip="پیشنمایش محصول"><i class="fa fa-eye"></i></a>
+<a href="#" class="simptip-position-top simptip-movable" data-tooltip="جزئیات محصول"><i class="fa fa-file-text-o"></i></a>
+<a href="#" class="simptip-position-top simptip-success simptip-movable" data-tooltip="خرید محصول"><i class="fa fa-shopping-cart"></i></a>
+</div>
+<div class="content rt">
+<h2 class="title rt rt-13"><a href="#">قالب های اس ام اس بصورت HTML</a></h2>
+</div>
+<div class="price left">۲۹۰۰۰ <span class="rt-18">تومان</span></div>
+<span class="pay-salle-mini rt rt-12">۹ فروش</span>
+</div>
+</article>
+<!--پایان نمونه کار کاربر-->
+
+<!--شروع نمونه کار کاربر-->
+<article class="post right">
+<div class="fix-items right rt-13">
+<div class="simptip-position-right simptip-movable half-arrow rt-center right orginal" data-tooltip="اورجینال"><i class="fa fa-check"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right easy-setup" data-tooltip="بسته نصب آسان"><i class="fa fa-support"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right profassional" data-tooltip="محصول حرفه ای"><i class="fa fa-star"></i></div>
+</div>
+<div class="big-photo rt"><a target="_blank" href="#"><img src="images/test.png" class="rt"></a></div>
+<div class="left-side rt">
+<div class="mini-items rt-13">
+<a href="#" class="simptip-position-top simptip-danger simptip-movable" data-tooltip="پیشنمایش محصول"><i class="fa fa-eye"></i></a>
+<a href="#" class="simptip-position-top simptip-movable" data-tooltip="جزئیات محصول"><i class="fa fa-file-text-o"></i></a>
+<a href="#" class="simptip-position-top simptip-success simptip-movable" data-tooltip="خرید محصول"><i class="fa fa-shopping-cart"></i></a>
+</div>
+<div class="content rt">
+<h2 class="title rt rt-13"><a href="#">قالب های اس ام اس بصورت HTML</a></h2>
+</div>
+<div class="price left">۲۹۰۰۰ <span class="rt-18">تومان</span></div>
+<span class="pay-salle-mini rt rt-12">۹ فروش</span>
+</div>
+</article>
+<!--پایان نمونه کار کاربر-->
+
+<!--شروع نمونه کار کاربر-->
+<article class="post right">
+<div class="fix-items right rt-13">
+<div class="simptip-position-right simptip-movable half-arrow rt-center right orginal" data-tooltip="اورجینال"><i class="fa fa-check"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right easy-setup" data-tooltip="بسته نصب آسان"><i class="fa fa-support"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right profassional" data-tooltip="محصول حرفه ای"><i class="fa fa-star"></i></div>
+</div>
+<div class="big-photo rt"><a target="_blank" href="#"><img src="images/test.png" class="rt"></a></div>
+<div class="left-side rt">
+<div class="mini-items rt-13">
+<a href="#" class="simptip-position-top simptip-danger simptip-movable" data-tooltip="پیشنمایش محصول"><i class="fa fa-eye"></i></a>
+<a href="#" class="simptip-position-top simptip-movable" data-tooltip="جزئیات محصول"><i class="fa fa-file-text-o"></i></a>
+<a href="#" class="simptip-position-top simptip-success simptip-movable" data-tooltip="خرید محصول"><i class="fa fa-shopping-cart"></i></a>
+</div>
+<div class="content rt">
+<h2 class="title rt rt-13"><a href="#">قالب های اس ام اس بصورت HTML</a></h2>
+</div>
+<div class="price left">۲۹۰۰۰ <span class="rt-18">تومان</span></div>
+<span class="pay-salle-mini rt rt-12">۹ فروش</span>
+</div>
+</article>
+<!--پایان نمونه کار کاربر-->
+
+<!--شروع نمونه کار کاربر-->
+<article class="post right">
+<div class="fix-items right rt-13">
+<div class="simptip-position-right simptip-movable half-arrow rt-center right orginal" data-tooltip="اورجینال"><i class="fa fa-check"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right easy-setup" data-tooltip="بسته نصب آسان"><i class="fa fa-support"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right profassional" data-tooltip="محصول حرفه ای"><i class="fa fa-star"></i></div>
+</div>
+<div class="big-photo rt"><a target="_blank" href="#"><img src="images/test.png" class="rt"></a></div>
+<div class="left-side rt">
+<div class="mini-items rt-13">
+<a href="#" class="simptip-position-top simptip-danger simptip-movable" data-tooltip="پیشنمایش محصول"><i class="fa fa-eye"></i></a>
+<a href="#" class="simptip-position-top simptip-movable" data-tooltip="جزئیات محصول"><i class="fa fa-file-text-o"></i></a>
+<a href="#" class="simptip-position-top simptip-success simptip-movable" data-tooltip="خرید محصول"><i class="fa fa-shopping-cart"></i></a>
+</div>
+<div class="content rt">
+<h2 class="title rt rt-13"><a href="#">قالب های اس ام اس بصورت HTML</a></h2>
+</div>
+<div class="price left">۲۹۰۰۰ <span class="rt-18">تومان</span></div>
+<span class="pay-salle-mini rt rt-12">۹ فروش</span>
+</div>
+</article>
+<!--پایان نمونه کار کاربر-->
+
+<!--شروع نمونه کار کاربر-->
+<article class="post right">
+<div class="fix-items right rt-13">
+<div class="simptip-position-right simptip-movable half-arrow rt-center right orginal" data-tooltip="اورجینال"><i class="fa fa-check"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right easy-setup" data-tooltip="بسته نصب آسان"><i class="fa fa-support"></i></div>
+<div class="simptip-position-right simptip-movable half-arrow rt-center right profassional" data-tooltip="محصول حرفه ای"><i class="fa fa-star"></i></div>
+</div>
+<div class="big-photo rt"><a target="_blank" href="#"><img src="images/test.png" class="rt"></a></div>
+<div class="left-side rt">
+<div class="mini-items rt-13">
+<a href="#" class="simptip-position-top simptip-danger simptip-movable" data-tooltip="پیشنمایش محصول"><i class="fa fa-eye"></i></a>
+<a href="#" class="simptip-position-top simptip-movable" data-tooltip="جزئیات محصول"><i class="fa fa-file-text-o"></i></a>
+<a href="#" class="simptip-position-top simptip-success simptip-movable" data-tooltip="خرید محصول"><i class="fa fa-shopping-cart"></i></a>
+</div>
+<div class="content rt">
+<h2 class="title rt rt-13"><a href="#">قالب های اس ام اس بصورت HTML</a></h2>
+</div>
+<div class="price left">۲۹۰۰۰ <span class="rt-18">تومان</span></div>
+<span class="pay-salle-mini rt rt-12">۹ فروش</span>
+</div>
+</article>
+<!--پایان نمونه کار کاربر-->
+
+</div>
+<!--پایان پست های نمونه کار-->
+
+<!--شروع صفحه بندی نمونه کار-->
+<div class="navigation">
+<span>1</span>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">4</a>
+<a href="#">5</a>
+<a href="#">6</a>
+<a href="#">7</a>
+<a href="#">8</a>
+<a href="#">9</a>
+</div>
+<!--پایان صفحه بندی نمونه کار-->
+
+</section>
+<!--پایان نمونه کار-->
+
+<!--شروع سایدبار پنل-->
+<section class="left-side left">
+
+<!--شروع ویژگی های طراح-->
+<aside class="block right profile">
+<img src="images/user-store.png" class="right avatar">
+<div class="entery left">
+<h5 class="rt rt-18">فروشنده :  حمیدرضا</h5>
+<a href="store.html" class="right rt-12">مشاهده نمونه کار ها</a>
+</div>
+<div class="info rt rt-16">
+<span class="rt-center c-1 simptip-position-top simptip-movable" data-tooltip="پر افتخار"><i class="fa fa-bolt"></i></span>
+<span class="rt-center c-2 simptip-position-top simptip-movable" data-tooltip="کاربر ویژه"><i class="fa fa-diamond"></i></span>
+<span class="rt-center c-3 simptip-position-top simptip-movable" data-tooltip="رشد درآمدی نسبی"><i class="fa fa-rocket"></i></span>
+<span class="rt-center c-4 simptip-position-top simptip-movable" data-tooltip="تخفیف دهنده برتر"><i class="fa fa-signal"></i></span>
+<span class="rt-center c-5 simptip-position-top simptip-movable" data-tooltip="پشتیبانی فوق العاده"><i class="fa fa-support"></i></span>
+<span class="rt-center c-6 simptip-position-top simptip-movable" data-tooltip="فروشنده ویژه وب استور"><i class="fa fa-star"></i></span>
+</div>
+</aside>
+<!--پایان ویژگی های طراح-->
+
+<!--شروع تعداد دیدگاه و خرید-->
+<aside class="block right sell-cm rt-18">
+<span class="right"><i class="fa fa-shopping-basket"></i> <samp class="rt-21">۱۶۴</samp> خرید</span>
+<span class="left b-cms"><i class="fa fa-comments-o"></i> <samp class="rt-21">۳۸۳</samp> دیدگاه</span>
+</aside>
+<!--پایان تعداد دیدگاه و خرید-->
+
+
+<!--شروع لینک های پروفایل-->
+<aside class="block right panel-links">
+<center><h5 class="rt rt-18"> محمدرضا جلیلیان	خوش آمدی </h5></center>	
+<ul class="right">
+	
+<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard"><a href="#"><i class="fa fa-desktop right"></i><span class="right rt-12">پیشخوان</span></a></li>
+<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders"><a href="#"><i class="fa fa-shopping-cart right"></i><span class="right rt-12">خریدها</span></a></li>
+<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--downloads"><a href="#"><i class="fa fa-download right"></i><span class="right rt-12">دانلود ها</span></a></li>
+<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account"><a href="#"><i class="fa fa-cogs right"></i><span class="right rt-12">تنظیمات</span></a></li>
+<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--tickets"><a href="#"><i class="fa fa-support right"></i><span class="right rt-12">تیکت‌های پشتیبانی</span></a></li>
+<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--tickets"><a href="#"><i class="fa fa-send-o right"></i><span class="right rt-12">ارسال تیک جدید</span></a></li>
+	<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--tickets"><a href="#"><i class="fa fa-archive right"></i><span class="right rt-12"> پشتیبانی محصولات</span></a></li>
+
+<li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout"><a href=""><i class="fa fa-sign-out right"></i><span class="right rt-12">خروج از سیستم</span></a></li>
+</ul>
+</aside>
+<!--پایان لینک های پروفایل-->
+	
+
+</section>
+<!--پایان سایدبار پنل-->
+
+</div>
+</div>
+</div>
+</div>
+<!--پایان محتوای اصلی سایت-->
+
+<!--شروع فوتر-->
+<footer>
+<div class="main">
+
+<!--شروع آمار سایت-->
+<aside class="amar rt">
+<div class="side right"><span id="persian-prod"></span><samp class="rt-15">محصول فارسی</samp></div>
+<div class="side right"><span id="user-and-buy"></span><samp class="rt-15">کاربر و مشتری</samp></div>
+<div class="side right"><span id="company-and-brands"></span><samp class="rt-15">شرکت و برند زیرمجموعه</samp></div>
+<div class="side right"><span id="developers-and-designers"></span><samp class="rt-15">طراح و برنامه‌نویس</samp></div>
+<div class="side right"><span id="like-and-buy"></span><samp class="rt-15">رضایت از خرید</samp></div>
+<script type="text/javascript">
+function vmsNumber(e,m){document.getElementById(m).innerHTML=vmsDef++,vmsSetTimeout=setTimeout(function(){vmsNumber(e,m)},1),vmsDef>e&&clearTimeout(vmsSetTimeout)}vmsDef=0;
+window.onload = 
+vmsNumber(4349,'persian-prod');/*تعداد محصولات فارسی*/
+vmsNumber(75639,'user-and-buy');/*تعداد کاربران و مشتری*/
+vmsNumber(210,'company-and-brands');/*تعداد شرکت و برند زیرمجموعه*/
+vmsNumber(261,'developers-and-designers');/*تعداد طراح و برنامه نویس*/
+vmsNumber(884564,'like-and-buy');/*تعداد رضایت از مشتری*/
+</script>
+</aside>
+<!--پایان آمار سایت-->
+
+
+<!--شروع نماد سایت-->
+<aside class="wr-namad right">
+<div class="owl-carousel alone-slider rt">
+<div class="item"><img class="namad" alt="وب استور" title="وب استور" src="images/enamad.png"><h5 class="rt rt-14">نماد اعتماد وب استور</h5></div>
+<div class="item"><img class="namad" alt="logo-samandehi" src="images/samandehi.png"><h5 class="rt rt-14">نشان ثبت ملی</h5></div>
+</div>
+</aside>
+<!--پایان نماد سایت-->
+
+<div class="left-side left">
+
+<!--شروع پست های اخیر وبلاگ-->
+<aside class="blog right">
+<div class="title rt"><i class="fa fa-file-text-o right"></i><h3 class="right rt-18">بلاگ <div>وب استور</div></h3></div>
+<ul class="rt rt-14">
+<li><a href="blog-single-post.html"><i class="fa fa-angle-left"></i> روش های شناسایی وفاداری مشتری</a></li>
+<li><a href="blog-single-post.html"><i class="fa fa-angle-left"></i> نگرشی نو بر بازار طراحی سایت</a></li>
+<li><a href="blog-single-post.html"><i class="fa fa-angle-left"></i> بازاریابی اینترنتی از طریق بنر تبلیغاتی</a></li>
+<li><a href="blog-single-post.html"><i class="fa fa-angle-left"></i> با سوشیال مارکتینگ آشنا شوید!</a></li>
+</ul>
+</aside>
+<!--پایان پست های اخیر وبلاگ-->
+
+<!--شروع درباره سایت-->
+<aside class="info-site left">
+<h2 class="rt-18">فروشگاه قالب وب استور</h2>
+<div class="rt rt-13">وب استور بزرگترین فروشگاه <a href="category.html">قالب وردپرس</a>، <a href="category.html">قالب جوملا</a>، <a href="category.html">قالب اپن کارت</a>، <a href="index.html">قالب whmcs</a> و همچنین افزونه های معتبر و اورجینال وردپرس و whmcs است که در کنار موارد بالا به خرید اسکریپت و فایل آماده فتوشاپ نیز اشاره کرد. <br> برای خرید قالب کافیست یکی از صدها قالب آماده را انتخاب کنید.</div>						
+</aside>
+<!--پایان درباره سایت-->
+
+<!--شروع باکس خبرنامه و شبکه های اجتماعی-->
+<aside class="mail-social rt">
+
+<!--شروع خبرنامه سایت-->
+<div class="mailpoet_form mailpoet_form_php right wr-form-mail">
+<div class="name rt rt-12"><span class="rt-17">تنها هفته‌ای یکبار</span>از سوپرایزها و تخفیفات هیجان انگیز وب استور باخبر شوید!</div>
+<form target="_self" method="post" action="post.php?action=mailpoet_subscription_form" class="rt mailpoet_form mailpoet_form_php" novalidate>
+<input type="hidden" name="data[form_id]" value="1" />
+<input type="hidden" name="token" value="f14083703d" />
+<input type="hidden" name="api_version" value="v1" />
+<input type="hidden" name="endpoint" value="subscribers" />
+<input type="hidden" name="mailpoet_method" value="subscribe" />
+<label class="mailpoet_hp_email_label" style="display:none">لطفا این فیلد را خالی نگه دارید<input type="email" name="data[email]"></label>
+<input type="email" class="mailpoet_text right rt-15" name="data[form_field_ZW1haWw=]" title="ایمیل" value="" data-automation-id="form_email"  placeholder="ایمیل *" data-parsley-required="true" data-parsley-minlength="6" data-parsley-maxlength="150" data-parsley-error-message="لطفا یک آدرس ایمیل معتبر را مشخص کنید." data-parsley-required-message="این فیلد مورد نیاز است."/>
+<input type="submit" class="mailpoet_submit right rt-15" value="عضوم کن" />
+<div class="mailpoet_message">
+<p class="mailpoet_validate_success" style="display:none">صندوق ایمیل یا پوشه اسپم خود را جهت تائید اشتراک چک کنید</p>
+<p class="mailpoet_validate_error" style="display:none"></p>
+</div>
+</form>
+</div>
+<!--پایان خبرنامه سایت-->
+
+<!--شروع شبکه های اجتماعی سایت-->
+<div class="f-social left">
+<div class="name rt rt-12"><span class="rt-17">به روز باشید</span>اتفاقات هیجان انگیز وب استور را دنبال کنید...</div>
+<a href="https://t.me/" title="کانال تلگرام" target="_blank" rel="nofollow" class="rt-center rt-16 left tg"><i class="fa fa-paper-plane-o"></i></a>
+<a href="https://www.instagram.com/" title="اینستاگرام" target="_blank" class="rt-center rt-16 left in" rel="nofollow"><i class="fa fa-instagram"></i></a>
+<a href="http://webstore.com/feed" title="فید سایت" target="_blank" rel="follow" class="rt-center rt-16 left rss"><i class="fa fa-rss"></i></a>
+</div>
+<!--پایان شبکه های اجتماعی سایت-->
+
+</aside>
+<!--پایان باکس خبرنامه و شبکه های اجتماعی-->
+
+</div>
+</div>
+
+<!--شروع کپی رایت-->
+<div class="copyright rt">
+<div class="main">
+<p class="right rt-13">
+
+۱۳۹۴ - ۱۳۹۸ ©  تمامی حقوق این سایت متعلق به شرکت فناوری اطلاعات <a href="index.html">وب استور</a> می باشد، هرگونه کپی برداری از آن پیگرد قانونی خواهد داشت. </p>
+<p class="left rt-13"><a href="index.html">قوانین و توافقنامه</a> | <a href="privacy.html">سیاست حریم خصوصی کاربران</a></p>
+
+</div>
+</div>
+<!--پایان کپی رایت-->
+
+</footer>
+<!--پایان فوتر-->
+
+<script type="text/javascript" src="js/tabs.js"></script>
+<script type="text/javascript" src="js/panel-tabs.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/java.js"></script>
+</body>
+</html>
